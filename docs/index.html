@@ -2,65 +2,37 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Орион</title>
+  <title>Мой сайт</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      background: #333;
       color: white;
+      font-family: sans-serif;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1611078489935-0cb964fe2dc3?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 100px 20px;
-      min-height: 100vh;
+      padding-top: 100px;
     }
     h1 {
-      font-size: 60px;
-      animation: neon 2s infinite alternate;
+      font-size: 48px;
+      color: #fff;
     }
-    @keyframes neon {
-      from { text-shadow: 0 0 10px #0ff; }
-      to { text-shadow: 0 0 30px #0ff, 0 0 50px #0ff; }
-    }
-    p {
-      font-size: 22px;
-      margin-top: 10px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 30px;
-      font-size: 20px;
-      border-radius: 10px;
-      background: linear-gradient(45deg, #00fff2, #005eff);
-      color: black;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-    a.button:hover {
-      transform: scale(1.1);
-    }
-    .stars {
-      font-size: 40px;
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background: #ff00ff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
       margin-top: 20px;
-      animation: float 2s infinite alternate;
     }
-    @keyframes float {
-      from { transform: translateY(0); }
-      to { transform: translateY(-10px); }
+    button:hover {
+      background: #cc00cc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>✨ Орион ✨</h1>
-    <p>Портал в другое измерение — только для своих.</p>
-    <div class="stars">🌌 🌠 🌟</div>
-    <a href="orion.html" class="button">Перейти</a>
-  </div>
+  <h1>Добро пожаловать!</h1>
+  <p>Нажми, чтобы зарегистрироваться:</p>
+  <a href="registration.html"><button>Регистрация</button></a>
 </body>
 </html>
