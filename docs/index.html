@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Просто мой сайт</title>
+  <title>Мой сайт</title>
   <style>
     body {
       margin: 0;
@@ -10,7 +10,7 @@
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1604079628048-9436be22a6a9?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
       background-size: cover;
       overflow: hidden;
     }
@@ -24,8 +24,8 @@
       animation: glow 2s infinite alternate;
     }
     @keyframes glow {
-      from { text-shadow: 0 0 5px #0ff; }
-      to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+      from { text-shadow: 0 0 5px #ff00ff; }
+      to { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
     }
     p {
       font-size: 20px;
@@ -37,8 +37,8 @@
       font-size: 18px;
       border: none;
       border-radius: 8px;
-      background: linear-gradient(45deg, #00ffc3, #0088ff);
-      color: #000;
+      background: linear-gradient(45deg, #ff00c8, #8a2be2);
+      color: #fff;
       cursor: pointer;
       transition: transform 0.2s ease;
     }
@@ -58,20 +58,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>Мой прикольный сайт 🎉</h1>
-    <p>Создан чисто для себя. Потому что могу.</p>
-    <div class="emoji">😎 🚀 🎧</div>
-    <button onclick="sayHi()">Нажми меня!</button>
+    <h1>Мой стильный сайт 🚀</h1>
+    <p>Да, я сделал это. Просто и красиво.</p>
+    <div class="emoji">✨ 🪐 👽</div>
+    <button onclick="sayHi()">Нажми!</button>
   </div>
 
   <script>
     function sayHi() {
       const messages = [
-        'Ты крут(а)! 😎',
-        'Продолжай творить! 🚀',
-        'GitHub рулит! 💻',
-        'Улыбнись :) 😊',
-        'Приключения только начинаются!'
+        'Ты великолепен(на)! 🌟',
+        'Так держать! 🚀',
+        'Твой сайт огонь! 🔥',
+        'Улыбайся чаще 😄',
+        'Мир ждёт твоих идей!'
       ];
       const msg = messages[Math.floor(Math.random() * messages.length)];
       alert(msg);
