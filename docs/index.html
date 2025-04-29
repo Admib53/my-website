@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Мой сайт</title>
+  <title>Орион</title>
   <style>
     body {
       margin: 0;
@@ -10,9 +10,8 @@
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1604079628048-9436be22a6a9?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1611078489935-0cb964fe2dc3?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
       background-size: cover;
-      overflow: hidden;
     }
     .container {
       background: rgba(0, 0, 0, 0.6);
@@ -20,62 +19,48 @@
       min-height: 100vh;
     }
     h1 {
-      font-size: 48px;
-      animation: glow 2s infinite alternate;
+      font-size: 60px;
+      animation: neon 2s infinite alternate;
     }
-    @keyframes glow {
-      from { text-shadow: 0 0 5px #ff00ff; }
-      to { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+    @keyframes neon {
+      from { text-shadow: 0 0 10px #0ff; }
+      to { text-shadow: 0 0 30px #0ff, 0 0 50px #0ff; }
     }
     p {
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 10px;
     }
-    button {
+    a.button {
+      display: inline-block;
       margin-top: 30px;
-      padding: 12px 24px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      background: linear-gradient(45deg, #ff00c8, #8a2be2);
-      color: #fff;
-      cursor: pointer;
+      padding: 12px 30px;
+      font-size: 20px;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #00fff2, #005eff);
+      color: black;
+      text-decoration: none;
       transition: transform 0.2s ease;
     }
-    button:hover {
+    a.button:hover {
       transform: scale(1.1);
     }
-    .emoji {
-      font-size: 36px;
+    .stars {
+      font-size: 40px;
       margin-top: 20px;
-      animation: bounce 1s infinite alternate;
+      animation: float 2s infinite alternate;
     }
-    @keyframes bounce {
+    @keyframes float {
       from { transform: translateY(0); }
-      to { transform: translateY(-15px); }
+      to { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Мой стильный сайт 🚀</h1>
-    <p>Да, я сделал это. Просто и красиво.</p>
-    <div class="emoji">✨ 🪐 👽</div>
-    <button onclick="sayHi()">Нажми!</button>
+    <h1>✨ Орион ✨</h1>
+    <p>Портал в другое измерение — только для своих.</p>
+    <div class="stars">🌌 🌠 🌟</div>
+    <a href="orion.html" class="button">Перейти</a>
   </div>
-
-  <script>
-    function sayHi() {
-      const messages = [
-        'Ты великолепен(на)! 🌟',
-        'Так держать! 🚀',
-        'Твой сайт огонь! 🔥',
-        'Улыбайся чаще 😄',
-        'Мир ждёт твоих идей!'
-      ];
-      const msg = messages[Math.floor(Math.random() * messages.length)];
-      alert(msg);
-    }
-  </script>
 </body>
 </html>
